@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+    color:  hsl(233, 8%, 62%);
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: hsl(233, 26%, 24%);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 7.5rem;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+}
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+}
+
+/*  Header -> Navbar */ 
+.navbar-brand {
+    position: absolute;
+    top: 40%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: .5% 0;
+}
+ul li {
+    margin: 1.5%;
+}
+ul li a {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.4rem;
+    color:  hsl(233, 8%, 62%);
+    border-bottom: 3px solid transparent;
+}
+ul li a:hover {
+    color:  hsl(233, 26%, 24%);
+}
+ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .2s;
+    -webkit-transition: width .2s;
+    -moz-transition: width .2s;
+    -ms-transition: width .2s;
+    -o-transition: width .2s;
+}
+ul li a:hover::after {
+    width: 100%;
+}
+.navbar__btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -4.8%; 
+}
+.btn {
+    border: none;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    padding: 12px 32px;
+    color: #fff;
+    background-image: linear-gradient(45deg, hsl(136, 65%, 51%) 20%, hsl(192, 70%, 51%) 100%);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background:  hsl(233, 26%, 24%);
+    transition: background .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    -ms-transition: background .5s ease-in-out;
+    -o-transition: background .5s ease-in-out;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+} 
+
+
+/* Hero Header */
+.hero {
+    width: 100vw;
+    height: 66rem;
+    background-color:   hsl(0, 0%, 98%);
+}
+
+.col-6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem,1fr));
+} 
+
+.hero__img::before {
+    content: "";
+    display: block;
+    width: 92rem;
+    height: 92rem;
+    background-image: url("../images/bg-intro-desktop.svg");
+    margin-left: 85%;
+    margin-top: -50%;
+}
+
+.hero-img {
+    margin-top: -22%;
+    margin-left: 27%;
+}
+
+.hero-title {
+    max-width: 460.5px;
+    position: absolute;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+.hero-title h1 {
+    font-size: 5.1rem;
+    font-weight: 300;
+}
+
+.hero-title p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    margin: 5% 0;
+}
+
+/* Features section */
+
+.features__section {
+    padding: 8rem 0;
+    background-color: #f3f4f6;
+}
+
+.feature__title {
+    max-width: 640.5px;
+}
+.feature__title h2 {
+    font-size: 4.2rem;
+    font-weight: 300;
+    padding: 1.5% 0;
+} 
+
+.feature__title p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+.features_inner__items {
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 26rem));
+    grid-gap: 1.5rem;;
+}
+
+.feature__grid img {
+    margin-bottom: 2.5rem; 
+}
+
+.feature__grid h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+.feature__grid p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
