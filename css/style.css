@@ -31,7 +31,6 @@ header {
     height: 7.5rem;
     background-color: hsl(0, 0%, 100%);
     position: relative;
-    overflow: hidden;
 }
 
 .container {
@@ -147,7 +146,6 @@ ul li a:hover::after {
 
 /* Hero Header */
 .hero {
-    width: 100vw;
     height: 65rem;
     background-color:   hsl(0, 0%, 98%);
 }
@@ -168,7 +166,7 @@ ul li a:hover::after {
 
 .hero-img {
     margin-top: -148%;
-    margin-left: 24%;
+    margin-left: 20%;
 }
 
 .hero-img img {
@@ -249,7 +247,7 @@ ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-column-gap: 3rem;
-    grid-row-gap: 3rem;
+    grid-row-gap: 8rem;
 }
 
 .latest__grid--items {
